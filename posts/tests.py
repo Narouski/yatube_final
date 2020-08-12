@@ -1,9 +1,9 @@
-from django.test import TestCase
-from .models import Group, Post, Follow
-from django.urls import reverse
-from django.test import Client
 from django.contrib.auth.models import User
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
+from django.test import Client, TestCase
+from django.urls import reverse
+
+from .models import Follow, Group, Post
 
 
 class Test(TestCase):
